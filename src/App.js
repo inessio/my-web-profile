@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import Navbar from './Navbar'
+import AddElement from './AddElement'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  state = {
+    data:[
+      {name:"sodji",age:26,belt:"black",id:1},
+      {name:"komlan",age:30,belt:"black",id:2},
+      {name:"inessio",age:38,belt:"black",id:3}
+    ]
+  }
+
+  addNew = (data) =>{
+    data.id = Math.random()
+    let element = [...this.state.data,data]
+    this.setState({
+      data:element 
+    })
+  }
+  deleteNew = (id) => {
+    console.log(id)
+    let elements = this.state.data.filter(element => {
+      return element.id !==id
+    })
+    this.setState({
+      data:elements
+    })
+  }
+  render(){
+    return (
+      <div className="App">
+        <header className="container">
+          <h1>welcome to my react website</h1>
+        </header>
+        <Navbar data={this.state.data} deleteNew={this.deleteNew} />
+        <AddElement addNew={this.addNew}  />
+      </div>
+    );
+  } 
+  
 }
 
 export default App;
