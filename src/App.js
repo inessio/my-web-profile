@@ -1,10 +1,16 @@
 import React,{Component} from 'react';
 import './App.css';
-import Navbar from './Navbar'
-import AddElement from './AddElement'
+import Sidebar from './Sidebar'
+import Content from './Content'
+import styled from 'styled-components'
 
-
+const Frame = styled.div`
+    width:100%;
+    background-color: snow;
+   
+`
 class App extends Component {
+
   state = {
     data:[
       {name:"sodji",age:26,belt:"black",id:1},
@@ -31,13 +37,12 @@ class App extends Component {
   }
   render(){
     return (
-      <div className="App">
-        <header className="container">
-          <h1>welcome to my react website</h1>
-        </header>
-        <Navbar data={this.state.data} deleteNew={this.deleteNew} />
-        <AddElement addNew={this.addNew}  />
-      </div>
+      <Frame>
+          <Sidebar />
+          <Content />
+           {/* <AddElement addNew={this.addNew}  /> */}
+      </Frame>
+       
     );
   } 
   
