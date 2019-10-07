@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
-import Sidebar from './Sidebar'
-import Content from './Content'
+import Sidebar from '../side-bar/Sidebar'
+import Content from '../../Content'
 import styled from 'styled-components'
 
 const Frame = styled.div`

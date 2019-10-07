@@ -1,6 +1,6 @@
 import React ,{ Component } from 'react'
 import styled from 'styled-components'
-import Welcome from './Welcome'
+import Welcome from './components/home/Welcome'
 
 const PageContent = styled.div`
     margin-left: 400px;

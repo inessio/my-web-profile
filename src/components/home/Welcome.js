@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import welcm from './img/welcm.svg'
+import welcm from '../../img/welcm.svg'
 
 const Wframe = styled.div`
-    text-align:center
+    text-align:center;
     transition: 0.3s;
     padding: 5px 5px 5px 5px;
 `

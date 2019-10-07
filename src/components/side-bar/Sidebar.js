@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import profile from './img/profile.png'
+import profile from '../../img/profile.png'
 
 const Aside = styled.aside`
     margin: 0;
