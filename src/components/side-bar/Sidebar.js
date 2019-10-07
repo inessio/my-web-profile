@@ -19,8 +19,8 @@ const Aside = styled.aside`
 `
 const Canvas = styled.img`
     border-radius: 50%;
-    width: 150px;
-    margin: 150px 0px 10px 100px;
+    width: 200px;
+    margin: 150px 0px 5px 80px;
     @media screen and (max-width: 700px) {
         width: 75px;
         height:auto;
