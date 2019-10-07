@@ -41,7 +41,7 @@ const Sidebar = () => {
     return (
         <Aside>
             <Canvas src={profile} alt="profile"></Canvas>
-            <center><FullName>Komlan Inessio Sodji</FullName></center>
+            <center><FullName>Komla Sodji</FullName></center>
         </Aside>
     )
 }
