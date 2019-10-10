@@ -5,17 +5,18 @@ import welcm from '../../img/welcm.svg'
 const Wframe = styled.div`
     text-align:center;
     transition: 0.3s;
-    padding: 5px 5px 5px 5px;
+    padding: 30px 5px 5px 5px;
 `
 const Wnote = styled.p`
-
+    font-size:20px;
+    text-align:center;
 `
 
 const Wimg = styled.img`
     padding-top:5px;
 `
 const Whead = styled.h1`
-    font-size:28px;
+    font-size:55px;
     
 `
 // const started = "2014";
@@ -28,10 +29,11 @@ const Whead = styled.h1`
 const Welcome = () => {
     return (
         <Wframe>
-            <Whead> I'm a full web stack developer </Whead>
+            <Whead>Hi there, </Whead>
+            <Whead>I'm Komla Sodji </Whead>
             {/* <Wframe><Wimg src={welcm}></Wimg>  </Wframe> */}
                   
-            <Wnote>I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices</Wnote>
+            <Wnote>Full-stack software engineer with over 5 years experience in NodeJS, ReactJs, ExpressJs</Wnote>
         </Wframe>
     )
 }
