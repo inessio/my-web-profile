@@ -19,8 +19,13 @@ const Whead = styled.h1`
     font-size:55px;
     
 `
-// const started = "2014";
-// var today = new Date;
+const experience = (started="2014") => {
+    let date = new Date().getFullYear() - started
+    console.log(date)
+    return date
+}
+
+
 // var tdYear = today.getFullYear()
 // const experienceYear = (started,tdYear) =>{
 //    return tdYear - started
@@ -33,7 +38,7 @@ const Welcome = () => {
             <Whead>I'm Komla Sodji </Whead>
             {/* <Wframe><Wimg src={welcm}></Wimg>  </Wframe> */}
                   
-            <Wnote>Full-stack software engineer with over 5 years experience in NodeJS, ReactJs, ExpressJs</Wnote>
+            <Wnote>Full-stack software engineer with over years {experience} in NodeJS, ReactJs, ExpressJs</Wnote>
         </Wframe>
     )
 }

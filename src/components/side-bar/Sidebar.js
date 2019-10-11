@@ -5,7 +5,7 @@ import profile from '../../img/profile.png'
 const Aside = styled.aside`
     margin: 0;
     padding: 0;
-    width: 350px;
+    width: 400px;
     background-color: steelblue;
     position: fixed;
     height: 100%;
@@ -19,8 +19,8 @@ const Aside = styled.aside`
 `
 const Canvas = styled.img`
     border-radius: 50%;
-    width: 200px;
-    margin: 150px 0px 5px 80px;
+    width: 150px;
+    margin: 150px 0px 0px 0px;
     @media screen and (max-width: 700px) {
         width: 75px;
         height:auto;
@@ -33,15 +33,40 @@ const Canvas = styled.img`
 `
 
 const FullName = styled.h2`
+      font-size:25px;
+      color:white;
+`
+const NavUl = styled.ul`
+
+`
+const NavLi = styled.li`
       font-size:20px;
       color:white;
+`
+const MenuDiv = styled.div`
+        margin: 50px 0px 0px 120px;
+        text-align:justify;
+        
 `
 
 const Sidebar = () => {
     return (
         <Aside>
-            <Canvas src={profile} alt="profile"></Canvas>
-            <center><FullName>Komla Sodji</FullName></center>
+            
+            <center>
+                <Canvas src={profile} alt="profile"></Canvas>
+                <FullName><strong>Komla Sodji</strong></FullName>
+                <MenuDiv>
+                    <NavUl>
+                        <NavLi>Home</NavLi>
+                        <NavLi>my profile</NavLi>
+                        <NavLi>personal projects</NavLi>
+                        <NavLi>Portfolio</NavLi>
+                        <NavLi>send me a message </NavLi>
+                    </NavUl>
+                </MenuDiv>
+                
+            </center>
         </Aside>
     )
 }
