@@ -35,6 +35,7 @@ const Canvas = styled.img`
 const FullName = styled.h2`
       font-size:25px;
       color:white;
+      font-weight:bold;
 `
 const NavUl = styled.ul`
 
@@ -42,6 +43,7 @@ const NavUl = styled.ul`
 const NavLi = styled.li`
       font-size:20px;
       color:white;
+      
 `
 const MenuDiv = styled.div`
         margin: 50px 0px 0px 120px;
@@ -49,21 +51,22 @@ const MenuDiv = styled.div`
         
 `
 
+// <NavUl>
+// <NavLi><a href="">Home</a></NavLi>
+// <NavLi><a href="">my profile</a></NavLi>
+// <NavLi><a href="">personal projects</a></NavLi>
+// <NavLi><a href="">Portfolio</a></NavLi>
+// <NavLi><a href="">send me a message</a> </NavLi>
+// </NavUl>
 const Sidebar = () => {
     return (
         <Aside>
             
             <center>
                 <Canvas src={profile} alt="profile"></Canvas>
-                <FullName><strong>Komla Sodji</strong></FullName>
+                <FullName>Komla Sodji</FullName>
                 <MenuDiv>
-                    <NavUl>
-                        <NavLi>Home</NavLi>
-                        <NavLi>my profile</NavLi>
-                        <NavLi>personal projects</NavLi>
-                        <NavLi>Portfolio</NavLi>
-                        <NavLi>send me a message </NavLi>
-                    </NavUl>
+                   
                 </MenuDiv>
                 
             </center>
