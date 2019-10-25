@@ -45,19 +45,16 @@ const NavLi = styled.li`
       color:white;
       
 `
+const NavA = styled.a`
+      color:white;
+`
 const MenuDiv = styled.div`
         margin: 50px 0px 0px 120px;
         text-align:justify;
         
 `
 
-// <NavUl>
-// <NavLi><a href="">Home</a></NavLi>
-// <NavLi><a href="">my profile</a></NavLi>
-// <NavLi><a href="">personal projects</a></NavLi>
-// <NavLi><a href="">Portfolio</a></NavLi>
-// <NavLi><a href="">send me a message</a> </NavLi>
-// </NavUl>
+
 const Sidebar = () => {
     return (
         <Aside>
@@ -66,7 +63,13 @@ const Sidebar = () => {
                 <Canvas src={profile} alt="profile"></Canvas>
                 <FullName>Komla Sodji</FullName>
                 <MenuDiv>
-                   
+                    <NavUl>
+                    <NavLi><NavA href="">Home</NavA></NavLi>
+                    <NavLi><NavA href="">my profile</NavA></NavLi>
+                    <NavLi><NavA href="">personal projects</NavA></NavLi>
+                    <NavLi><NavA href="">Portfolio</NavA></NavLi>
+                    <NavLi><NavA href="">send me a message</NavA> </NavLi>
+                    </NavUl>
                 </MenuDiv>
                 
             </center>

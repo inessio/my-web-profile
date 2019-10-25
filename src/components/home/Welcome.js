@@ -42,6 +42,20 @@ color:white;
 const experience =  new Date().getFullYear() - 2014;
 const skills = ['Javascript','Node JS','Express JS','ReactJS','Angular','PHP','Laravel','Redis','RabbitMQ','REST','GraphQL','Apollo graphQL','Elasticsearch','MySql','PostgreSQL'];
 const items = skills.map((skill,index) => <Span key={index}>{skill}</Span>)
+const langages = [
+    {
+        id:1,
+        name:'English',
+        level:'Fluent'
+
+    },
+    {
+        id:2,
+        name:'French',
+        level:'Fluent'
+    } 
+]
+const langue = langages.map((item) => <Span key={item.id}>{item.name} - <span>{item.level}</span></Span>)
 const Welcome = () => {
     return (
         <div>
@@ -53,7 +67,7 @@ const Welcome = () => {
             </Wframe>
             <hr></hr>
             <Wframe>
-                <Wnote>{}</Wnote>
+                <Wnote>{langue}</Wnote>
             </Wframe>
             <Wframe>
                 <Wnote>{items}</Wnote>
