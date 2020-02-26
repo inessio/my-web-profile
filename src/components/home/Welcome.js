@@ -47,9 +47,17 @@ const Span = styled.button`
 const experience =  new Date().getFullYear() - 2014;
 
 const bio = `I'm a Full-stack Software Engineer with industry experience (over ${experience} years), building websites, RESTful API, and so on. Using Javascript, Node js , React and PHP at daily work.
-             Usually, using Angular, Docker for personal projects.Strong TDD Advocate, sometimes maintaning services on Linux based servers.\n\n\n
-             I also have enthousiasm for problem solving and digging new techs.`;
-const bio2 = ` `;             
+    Usually, using Angular, Docker for personal projects.Strong TDD Advocate, sometimes maintaning services on Linux based servers.\n\n\n
+    I also have enthousiasm for problem solving and digging new techs.`;
+
+const Footer = styled.div`
+    text-align:center;
+    transition: 0.3s;
+    padding: 20px;
+    margin: 30px 100px 30px 100px;
+    background-color:red;
+    font-size:10px;
+`;            
 
 const skills = [
                 'Javascript',
@@ -113,7 +121,7 @@ const Welcome = () => {
             <br></br>
             <br></br>
             <br></br>
-            <Wframe style = "background-color:red;">
+            <Wframe>
                 <Wnote>Email: duhamelgking@gmail.com</Wnote>
                 <Wnote>Phone: +233556304507</Wnote>
             </Wframe>
