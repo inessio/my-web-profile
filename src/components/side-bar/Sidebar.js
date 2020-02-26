@@ -61,7 +61,7 @@ const Sidebar = () => {
             <center>
                 <Canvas src={profile} alt="profile"></Canvas>
                 <FullName>Komla Sodji</FullName>
-                <MenuDiv>
+                {/* <MenuDiv>
                     <NavUl>
                     <NavLi><NavA href="">Home</NavA></NavLi>
                     <NavLi><NavA href="">my profile</NavA></NavLi>
@@ -69,7 +69,7 @@ const Sidebar = () => {
                     <NavLi><NavA href="">Portfolio</NavA></NavLi>
                     <NavLi><NavA href="">send me a message</NavA> </NavLi>
                     </NavUl>
-                </MenuDiv>
+                </MenuDiv> */}
                 
             </center>
         </Aside>
