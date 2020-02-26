@@ -54,7 +54,6 @@ const MenuDiv = styled.div`
         
 `
 
-
 const Sidebar = () => {
     return (
         <Aside>
