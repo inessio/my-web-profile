@@ -40,6 +40,10 @@ color:white;
 `
 
 const experience =  new Date().getFullYear() - 2014;
+const bio = `I have over ${experience} years experience as software engineer, and I have worked
+             for both small startups and large organizations. While I'm proficient Senior Full-stack developer,
+             my expertise is in building scalable backend services (API services, stream processing, and async mechanisms), 
+             frontend applications (web-apps, web portal) and a Strong TDD Advocate `;
 const skills = ['Javascript','Node JS','Express JS','ReactJS','Angular','PHP','Laravel','Redis','RabbitMQ','REST','GraphQL','Apollo graphQL','Elasticsearch','MySql','PostgreSQL'];
 const items = skills.map((skill,index) => <Span key={index}>{skill}</Span>)
 const langages = [
@@ -63,15 +67,16 @@ const Welcome = () => {
                 <Whead>👋 Hello, I'm Komla Sodji </Whead>
                 {/* <Wframe><Wimg src={welcm}></Wimg>  </Wframe> */}
                     
-                <Wnote>I have over {experience} years experience as software engineer, and I have worked for both small startups and large organizations. While I'm proficient Senior Full-stack developer, my expertise is in building scalable backend services (API services, stream processing, and async mechanisms), frontend applications (web-apps, web portal) and a Strong TDD Advocate </Wnote>
+                <Wnote>{bio}</Wnote>
             </Wframe>
             <hr></hr>
             <Wframe>
-                <Wnote>{langue}</Wnote>
-            </Wframe>
-            <Wframe>
                 <Wnote>{items}</Wnote>
             </Wframe>
+            <Wframe>
+                <Wnote>{langue}</Wnote>
+            </Wframe>
+            
         </div>
 
     )
