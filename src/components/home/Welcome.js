@@ -106,12 +106,14 @@ const Welcome = () => {
             </Wframe>
             <Wframe>
                 <Tittle>Personal Skills</Tittle>
-                {/* <Wnote>{personal}</Wnote> */}
+
+                <Wnote>{personal}</Wnote>
+
             </Wframe>
             <br></br>
             <br></br>
             <br></br>
-            <Wframe>
+            <Wframe style = "background-color:red;">
                 <Wnote>Email: duhamelgking@gmail.com</Wnote>
                 <Wnote>Phone: +233556304507</Wnote>
             </Wframe>
