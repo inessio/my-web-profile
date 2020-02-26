@@ -106,7 +106,7 @@ const Welcome = () => {
             </Wframe>
             <Wframe>
                 <Tittle>Personal Skills</Tittle>
-                <Wnote>{personal}</Wnote>
+                {/* <Wnote>{personal}</Wnote> */}
             </Wframe>
             <br></br>
             <br></br>
